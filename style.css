@@ -1,0 +1,62 @@
+/* color: #e8b50d;   #fdc920  */
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap') ;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "marcellus", sans-serif ;
+}
+
+body{
+    background: #050c36;
+}
+
+.wrapper{
+    width: 400px ;
+    border: 1px solid #132fd2 ;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50% ;
+}
+.container{
+    width: 100%;
+    background-color: #050c36;
+    padding: 50px 40px ;
+    box-shadow: 0 20px 65px  #132fd2;
+    position: relative;
+    border-radius: 8px ;
+    text-align: center;
+}
+.container::before{
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 120%;
+  background-color:  #d0d2de ;
+  border: 1px solid black;
+  z-index: -1 ;
+  top: -10% ;
+  right: 10%;
+}
+.container p{
+    color: #fdc920 ;
+    line-height: 1.5 ;
+     font-size: 18px ;
+}
+.container h3{
+    color: rgb(58, 85, 241);
+    margin: 20px 0 60px 0 ;
+    font-weight: 600;
+   text-transform: capitalize ;
+}
+.container button{
+    background-color: #132fd2;
+    border: none ;
+    padding: 15px 45px ;
+    border-radius: 5px;
+    font-size: 18px ;
+    font-weight: 600;
+    color: whitesmoke;
+    cursor : pointer ;
+}
